@@ -1,0 +1,966 @@
+:root {
+  --color-bg-white: #f8fafc;
+  --color-text-gray: gray;
+  --color-bg-lightblue: #eff5ff;
+  --color-dark-blue: #4375ff;
+  --color-dark-green: #00a63e;
+  --color-light-green: #eaf4ed;
+  --color-light-purble: #efe0fc;
+  --color-dark-purble: #9810fa;
+  --color-light-orange: #fce5d5;
+  --color-dark-orange: #ff6900;
+
+  --main-bg-color: #fefefe;
+  --color-div-white-bg: #ffffff;
+  --color-text-red: #e7000b;
+  --color-bg-red: #ffe2e2;
+  --color-bg-dumbbell: #CEFAFE;
+  --color-text-pink: #e60076;
+  --color-text-dumbbell: #0092B8;
+
+  --color-bg-lightpink: #fce7f3;
+  
+}
+
+body {
+  margin: 0px;
+  background: #f8fafc;
+  font-family:
+    IBM Plex Sans Arabic,
+    sans-serif;
+  font-weight: 600;
+  box-sizing: border-box;
+  direction: rtl;
+  text-align: right;
+}
+
+.orange-text {
+  background-color: var(--color-light-orange);
+  color: var(--color-dark-orange);
+}
+.orange-txt {
+  color: var(--color-dark-orange);
+}
+
+.dumbbell-text{
+  background-color: var(--color-bg-dumbbell);
+  color: var(--color-text-dumbbell);
+}
+
+.pink-text {
+  background-color: var(--color-bg-lightpink);
+  color: var(--color-text-pink);
+}
+.pink-txt {
+  color: var(--color-text-pink);
+}
+
+.red-text {
+  background-color: var(--color-bg-red);
+  color: var(--color-text-red);
+}
+.red-txt {
+  color: var(--color-text-red);
+}
+
+.blue-txt {
+  color: var(--color-dark-blue);
+}
+
+.purble-text {
+  background-color: var(--color-light-purble);
+  color: var(--color-dark-purble);
+}
+
+.green-text {
+  background-color: var(--color-light-green);
+  color: var(--color-dark-green);
+}
+.green-txt {
+  color: var(--color-dark-green);
+}
+
+.blue-text {
+  background-color: var(--color-bg-lightblue);
+  color: var(--color-dark-blue);
+}
+
+.gray-text {
+  color: var(--color-text-gray);
+}
+
+.div-bg {
+  background-color: var(--color-div-white-bg);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.s-14 {
+  font-size: 14px;
+}
+.s-12 {
+  font-size: 12px;
+}
+
+.main {
+  background-color: azure;
+  display: flex;
+}
+
+.bage-content {
+  flex: 5;
+  background-color: #F9FAFB;
+}
+
+.border-r-15 {
+  padding: 0.1875rem;
+  border-radius: 0.9375rem;
+}
+
+/* =============================aside========================== */
+
+.aside {
+  flex: 1;
+  background-color: var(--color-bg-white);
+  height: 100vh;
+  padding: 1.25rem;
+  overflow: scroll;
+  position: sticky;
+  top: 0;
+}
+
+.aside-header {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.fa-header {
+  background-color: #2f4eef;
+  color: white;
+  padding: 0.9375rem;
+  font-size: 1.25rem;
+  border-radius: 0.625rem;
+  margin-top: 0.625rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.aside-header-h1 p {
+  color: var(--color-text-gray);
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.aside .aside-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-gray);
+  padding: 0.625rem 1rem;
+  border: none;
+  
+}
+
+.aside .aside-links li {
+  list-style: none;
+  /* transform: translate(2rem); */
+
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.aside .aside-links a:hover {
+  background-color: var(--color-bg-lightblue);
+  color: var(--color-dark-blue);
+  border: #c4cdf9 1px solid;
+  border-radius: 1rem;
+}
+
+.aside-links,
+.aside ul {
+  width: 100%;
+  padding: 0rem;
+}
+
+.aside-links {
+  margin-bottom: 2.5rem;
+}
+
+.aside-buttons {
+  margin-top: 1.5rem;
+}
+
+.aside-buttons button {
+  display: block;
+  margin-bottom: 10px;
+  padding: .9375rem ;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.125rem;
+  transition: 0.3s;
+  text-align: right;
+}
+
+.aside-buttons button:hover {
+  transform: translate(0.3125rem);
+}
+
+.aside-buttons button:hover .fa-paper-icon {
+  background-color: #dbe8fc;
+}
+.aside-buttons button:hover .fa-plus-icon {
+  background-color: #c3f5d7;
+}
+.aside-buttons button:hover .fa-receipt-icon {
+  background-color: #dcbef6;
+}
+.aside-buttons button:hover .fa-chart-icon {
+  background-color: #f6d4bc;
+}
+
+.aside-buttons i {
+  font-size: 0.875rem;
+  padding: 0.625rem;
+  border-radius: 0.625rem;
+  margin-left: 0.625rem;
+}
+
+/* =============================aside====================== */
+
+/* =============================navbar====================== */
+
+nav {
+  width: 90%;
+  margin: 30px auto;
+  border: rgb(242, 241, 241) 0.125rem solid;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  background-color: var(--main-bg-color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .aside-header {
+  margin: 0;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.animation-span::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-dark-green);
+  animation: coloring 2s infinite;
+}
+
+@keyframes coloring {
+  0% {
+    background-color: #79f4a6;
+  }
+  50% {
+    background-color: rgb(85, 141, 85);
+  }
+  100% {
+    background-color: rgb(40, 97, 40);
+  }
+}
+
+.navbar{
+  position: relative;
+}
+
+.animation-span {
+  font-size: 0.75rem;
+  padding: 0.625rem;
+  border: 0.0625rem solid rgb(210, 241, 210);
+  border-radius: 0.625rem;
+  position: absolute;
+  top:50px;
+  right: 200px;
+}
+
+.avatar-img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.avatar-img img {
+  border-radius: 0.625rem;
+}
+
+.user-name {
+  padding: 10px;
+  border: solid rgb(206, 205, 205) 1px;
+  border-radius: 0.625rem;
+  box-shadow: 1px 1px 1px gray;
+}
+
+.user-details p {
+  font-size: 0.75rem;
+  margin: 0;
+}
+.user-details span {
+  font-size: 0.625rem;
+}
+
+.nav-left button {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.625rem;
+  margin-left: 1rem;
+  background-color: var(--color-div-white-bg);
+  border: 0.0625rem solid rgb(215, 213, 213);
+  border-radius: 0.625rem;
+  transition: .2s;
+}
+
+.nav-left button:hover {
+  background-color: #f3f4f6;
+}
+
+.nav-left {
+  align-items: center;
+}
+
+.notification-button {
+  position: relative;
+}
+
+.notification {
+  background-color: red;
+  color: white;
+  display: inline-block;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(40%, -40%);
+}
+
+/* =============================navbar====================== */
+
+.after-nav-cards .card{
+   background-color: var(--color-div-white-bg);
+  border: rgb(229, 228, 228) 2px solid;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  width: 33.33%;
+}
+
+.after-nav-cards{
+  width: 95%;
+  margin:30px auto;
+  gap: 20px;
+}
+
+/* =============================last section====================== */
+
+.left-section {
+  width: 95%;
+  margin: 10px auto;
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, maxmax(25rem, auto));
+
+  gap: 1.25rem;
+
+  grid-template-areas:
+    
+    "activities table table"
+    /* "activities table table" */
+    "bills table table"
+    /* "bills table table" */
+    "view fees payment"
+    "view summery payment"
+    /* "view summery payment" */
+    /* "view summery payment" */
+    "view empty empty"
+    ;
+}
+
+.left-section .card {
+  background-color: var(--color-div-white-bg);
+  border: rgb(229, 228, 228) 2px solid;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+}
+
+
+
+.recent-activities {
+  grid-area: activities;
+}
+
+.transaction-table {
+  grid-area: table;
+}
+
+.monthly-bills-card {
+  grid-area: bills;
+}
+
+.view-card {
+  grid-area: view;
+}
+
+.income-vs-fees-card {
+  grid-area: fees;
+}
+
+.payment-methods-card {
+  grid-area: payment;
+}
+
+.account-summery {
+  grid-area: summery;
+}
+
+.current-balance-card h2,
+.income-card h2,
+.Expenses-card h2 {
+  color: gray;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+
+.current-balance-card p,
+.income-card p,
+.Expenses-card p {
+  font-size: 2.1875rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.balance-footer,
+.income-footer,
+.Expenses-footer {
+  font-size: 16px;
+  margin: 0.625rem;
+  font-weight: 700;
+  color: #00a63e;
+}
+
+.Expenses-footer {
+  color: red;
+}
+
+.card-header {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.625rem;
+}
+
+.card-header h2 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.card-header span:hover {
+  color: black;
+}
+
+/* =====================================الانشطة الحديثة=============================== */
+
+.recent-activities-card1,
+.recent-activities-card2 {
+  width: 95%;
+  height: 6rem;
+  margin-bottom: 1.25rem;
+
+  border-radius: 1rem;
+  padding: 0.625rem;
+}
+
+.recent-activities-card1 {
+  border-left: 0.25rem var(--color-dark-blue) solid;
+}
+
+.recent-activities-card2 {
+  border-left: 0.25rem var(--color-dark-green) solid;
+}
+
+.recent-activities-card1 h3,
+.recent-activities-card2 h3 {
+  margin: 0;
+  color: black;
+  font-size: 1rem;
+}
+
+.card-icon,
+.card-icon2 {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.card-icon {
+  background-color: #d3d9f3;
+}
+.card-icon2 {
+  background-color: #d4fce3;
+}
+
+.activities-card-details p {
+  font-size: 12px;
+  color: #4a5565;
+  line-height: 1.5;
+}
+
+.activities-card-details {
+  flex: 1;
+  margin-right: 0.625rem;
+  position: relative;
+}
+
+.activities-card-details-header1 {
+  display: flex;
+  justify-content: space-between;
+}
+.activities-card-details-header1 span {
+  font-size: 12px;
+  color: rgb(60, 60, 252);
+}
+
+.recent-activities,
+.monthly-bills-card {
+  padding: 20px;
+}
+
+.activities-card-details-footer {
+  color: #868889;
+  position: absolute;
+  bottom: 5px;
+}
+
+.recent-card-container {
+  padding-bottom: 0.625rem;
+  border-bottom: 0.0625rem rgb(231, 230, 230) solid;
+  margin-bottom: 20px;
+}
+
+.recent-activities a {
+  display: block;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  color: var(--color-dark-blue);
+}
+
+/* =====================================الانشطة الحديثة=============================== */
+
+/* =====================================الفواتير الشهرية============================== */
+
+.monthly-bills-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.625rem;
+}
+
+.card-header span {
+  color: #6f6f71;
+  font-size: 0.875rem;
+}
+
+.monthly-bills-card-header h3,
+.monthly-bills-card-header p {
+  text-align: center;
+  width: 100%;
+}
+
+.monthly-bills-card-header h3 {
+  font-size: 30px;
+  margin: 0px;
+}
+
+.monthly-bills-card-header p {
+  font-size: 14px;
+  color: #6f6f71;
+  margin-top: 0px;
+}
+
+.monthly-bills-card-container {
+  text-align: center;
+  background-color: #fafbfc;
+  padding: 10px;
+  border: 1px solid rgb(242, 240, 240);
+  border-radius: 10px;
+}
+
+.monthly-icon {
+  font-size: 0.875rem;
+
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0.625rem;
+}
+
+.monthly-bills-card-container .monthly-icon {
+  margin: auto;
+}
+
+.monthly-bills-card-container p {
+  margin: 0px;
+}
+
+/* =====================================الفواتير الشهرية============================== */
+
+/* =====================================نظره عامة ============================== */
+
+.ratio {
+  width: 100%;
+  height: 0.625rem;
+  border-radius: 1.25rem;
+  background-color: #e5e7eb;
+  margin: auto;
+}
+
+.inner-ratio {
+  width: 82.5%;
+  height: 0.625rem;
+  border-radius: 1.25rem;
+  background-color: var(--color-dark-blue);
+}
+
+.total-budget h3 {
+  margin: 0rem;
+}
+
+.view-card1 {
+  padding: 1.25rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(221, 220, 220);
+  margin-bottom: 1rem;
+  transition: .2s;
+}
+
+.view-card1:hover{
+  /* transform: translate(.3125rem); */
+  box-shadow: .125rem .125rem .125rem rgb(187, 187, 187);
+  background-color: #F5F6F8;
+}
+
+.total-budget-p1 {
+  color: #1c398e;
+  font-size: 1.5625rem;
+  font-weight: 700;
+  margin: 0rem;
+}
+
+.view-card-info {
+  display: inline;
+}
+
+.view-card-contain {
+  justify-self: end;
+}
+
+.view-card-contain p {
+  margin: 5px;
+}
+
+.view-card-footer {
+  justify-content: space-between;
+  margin: 0.625rem auto;
+}
+
+.view-card-footer p,
+.total-budget-card1 p {
+  margin: 0;
+}
+
+.view-card-info .monthly-icon {
+  margin-left: 0.625rem;
+}
+
+.inner-ratio-50 {
+  background-color: var(--color-dark-orange);
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.inner-ratio-100 {
+  background-color: var(--color-text-red);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.inner-ratio-80 {
+  background-color: var(--color-text-pink);
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+}
+.inner-ratio-86 {
+  background-color: var(--color-dark-green);
+  width: 86%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* ===================================== نظرة عامة============================== */
+
+/* ===================================== الدخل مقابل المصروفات============================= */
+
+.income-vs-fees-contain {
+  width: 60%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.income-vs-fees-contain p {
+  margin: 0;
+}
+
+.income-vs-fees-contain p::before {
+  content: " ";
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-left: 0.3125rem;
+  border-radius: 0.125rem;
+}
+
+.income-vs-fees-contain p:first-of-type::before {
+  background-color: var(--color-dark-green);
+}
+.income-vs-fees-contain p:nth-of-type(2)::before {
+  background-color: var(--color-text-red);
+}
+
+.income-vs-fees-card .card-header h2 {
+  margin: 0;
+}
+
+.income-vs-fees-card .card-header {
+  margin-bottom: 1.25rem;
+}
+
+.chart-col {
+  height: 100%;
+  width: 25%;
+  text-align: center;
+}
+
+.chart-container {
+  padding: 1.25rem;
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.chart-green {
+  background-color: var(--color-dark-green);
+  width: 15px;
+  height: 70%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.chart-bar {
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: center;
+
+  gap: 2px;
+}
+.chart-red {
+  background-color: var(--color-text-red);
+  width: 15px;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.chart-red1 {
+  height: 40%;
+}
+.chart-red2 {
+  height: 30%;
+}
+.chart-red3 {
+  height: 50%;
+}
+.chart-red4 {
+  height: 40%;
+}
+
+/* ===================================== الدخل مقابل المصروفات============================= */
+
+/* ===================================== ملخص الحساب============================ */
+
+.account-summery-card {
+  background-color: var(--color-div-white-bg);
+
+  padding: 1.25rem;
+  gap: 1.875rem;
+  align-items: center;
+  border: 0.0625rem solid rgb(236, 236, 236);
+  border-radius: 0.625rem;
+  margin-bottom: 1.25rem;
+}
+
+.account-summery-card h4,
+.account-summery-card p {
+  margin: 0;
+}
+
+.account-summery-card-container {
+  gap: 0.625rem;
+}
+/* ===================================== ملخص الحساب============================ */
+
+/* ===================================== طريقة الدفع  ============================ */
+
+.payment-card-header .visa,
+.payment-card-header-left {
+  width: 3.125rem;
+  height: 30px;
+}
+
+.payment-card-header-left {
+  background-color: rgba(255, 255, 255, 0.202);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3125rem;
+  margin-top: 10px;
+}
+
+.payment-card-header-linner {
+  width: 1.875rem;
+  height: 1.25rem;
+  background-color: rgba(255, 255, 255, 0.29);
+  margin: auto;
+  border-radius: 0.3125rem;
+}
+.payment-card-header .visa img {
+  width: 100%;
+}
+
+.payment-card1,
+.payment-card2,
+.payment-card3 {
+  color: white;
+  padding: 1.875rem;
+  border-radius: 0.625rem;
+  margin-bottom: 1.25rem;
+}
+
+.payment-card1 {
+  background-color: #391eae;
+}
+.payment-card2 {
+  background-color: #b11c24;
+}
+.payment-card3 {
+  background-color: rgb(7, 7, 168);
+}
+
+.payment-card-header {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.payment-method-contain p {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.payment-method-footer {
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.payment-method-footer p {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* ===================================== طريقة الدفع ============================ */
+/* ===================================== table============================ */
+
+.transaction-table .t-table{
+  width: 100%;
+  margin: 10px ;
+  overflow-x:auto ;
+
+}
+.transaction-table .t-table th{
+  padding-bottom: .625rem;
+  border-bottom: 1px solid rgb(236, 235, 235);
+  color: #3a3a3a;
+}
+.transaction-table .t-table .sec-col span{
+  padding: .1875rem .625rem;
+  border-radius: .625rem;
+  font-size: 12px;
+}
+
+.transaction-table td{
+  padding:   .9375rem 0rem;
+}
+
+
+
+.table-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.table-icon img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.table-icon-name{
+  gap: .625rem;
+  text-align: center;
+  align-items: center;
+}
+.table-icon-name p{
+  margin: 0;
+  font-size: 14px;
+}
+
+/* ===================================== table============================ */
+
+/* =============================last section====================== */

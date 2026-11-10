@@ -1,0 +1,117 @@
+@media (max-width: 1250px) {
+  .aside-links span,
+  .aside .aside-header-h1,
+  .aside-buttons span {
+    display: none;
+  }
+
+  .aside {
+    flex: none;
+    padding: 0rem;
+    overflow-x: hidden;
+    width: 70px;
+  }
+
+  .aside .speed {
+    display: none;
+  }
+
+  .aside-header {
+    /* display: block; */
+    gap: 0rem;
+  }
+
+  .fa-header {
+    font-size: 0.875rem;
+    border-radius: 2rem;
+    padding: 0.9375rem 0.625rem;
+    margin: 0.625rem 0.3125rem;
+  }
+
+  .aside-links a {
+    font-size: 0.875rem;
+    padding: 0.1875rem;
+  }
+
+  .left-section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, minmax(25rem, auto));
+
+    gap: 1.25rem;
+
+    grid-template-areas:
+      "activities fees"
+      /* "activities table table" */
+      " table table"
+      /* "bills table table" */
+      "bills summery"
+      "view payment"
+      /* "view summery payment" */
+      /* "view summery payment" */;
+  }
+}
+
+/* ==================================mobile media============================ */
+
+@media (max-width: 48.75rem) {
+  .aside {
+    display: none;
+  }
+
+  .left-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+
+    gap: 1.25rem;
+
+    grid-template-areas:
+      "activities"
+      "table"
+      "bills"
+      "view"
+      "fees"
+      "summery"
+      "payment";
+  }
+
+  .after-nav-cards {
+    display: block;
+  }
+  .after-nav-cards .card {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .nav-left button {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.3125rem;
+    margin-left: 0.3125rem;
+  }
+}
+
+@media (max-width: 36rem) {
+  .navbar {
+    display: block;
+  }
+
+  .navbar .nav-left {
+    justify-content: space-between;
+    border: none;
+  }
+
+  .user-name .user-details {
+    display: none;
+  }
+
+  .animation-span {
+    position: static;
+    margin: 1.25rem auto;
+    text-align: center;
+  }
+}
